@@ -283,7 +283,7 @@ This section lets you iterate the kmeans algorithm (max. 20 iterations), based o
 ''')
 st.markdown('Optimization criterion is:')
 st.latex(r'''J=\sum_{i=1}^{k}\sum_{x_{j}\epsilon S_{i}}^{} \left \| x_{j}-\mu_{i}  \right \|''')
-st.markdown('Which describes the sum of points per cluster, for all clusters combined. This is called "inertia"')
+st.markdown('Which describes the sum of distances between cluster center and associated points, for all clusters combined. This is called "inertia"')
 st.markdown("The bottom figure shows the model's inertia at each step. Note that the y-axis is cut off, making vertical changes more dramatic")
 
 step = st.number_input('Enter iteration number', value=1, min_value=1, max_value=20)
